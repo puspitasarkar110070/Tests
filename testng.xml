@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automate Testing">
+<listeners>
+<listener class-name="com.qa.utility1.ExtentReport"></listener>
+</listeners>
+  <test thread-count="5" name="Function Testing">
+  <parameter name="Browser" value="Chrome"></parameter>
+  <parameter name="Url" value="https://www.amazon.in/"></parameter>
+    <classes>
+    
+      <class name="com.qa.automation1.AmazonSignIn"/>
+      <class name="com.qa.automation1.AmazonLogin"/>
+      <class name="com.qa.automation1.AmazonSignOut"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
